@@ -1,0 +1,20 @@
+.bus-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.bus-selector button {
+  background: #999;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.bus-selector button.active {
+  background: #4caf50;
+}

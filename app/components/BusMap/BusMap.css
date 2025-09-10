@@ -1,0 +1,12 @@
+.bus-map {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bus-map img {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

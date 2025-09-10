@@ -1,0 +1,24 @@
+.bus-schedule {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bus-schedule table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bus-schedule th, .bus-schedule td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.bus-schedule .highlight {
+  background: #ffcc66;
+}

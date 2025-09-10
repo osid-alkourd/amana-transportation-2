@@ -1,0 +1,17 @@
+.header-section {
+  background: #4caf50;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-section h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-section p {
+  margin-top: 5px;
+  font-size: 14px;
+}
