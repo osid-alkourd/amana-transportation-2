@@ -16,13 +16,13 @@ export default function BusMap({ selectedBusId }) {
   const selectedBus = busLines.find((bus) => bus.id === selectedBusId);
 
   const busIcon = new L.Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/61/61212.png",
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/422/422962.png",
     iconSize: [32, 32],
     iconAnchor: [16, 32],
   });
 
   const stopIcon = new L.Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/854/854894.png",
+    iconUrl: "https://cdn-icons-png.freepik.com/512/4287/4287661.png",
     iconSize: [20, 20],
     iconAnchor: [10, 20],
   });
