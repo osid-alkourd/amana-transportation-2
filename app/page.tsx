@@ -8,7 +8,6 @@ import BusSchedule from "./components/BusSchedule/BusSchedule";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
-
 export default function Home() {
   const [selectedBusId, setSelectedBusId] = useState<number | null>(null);
 
@@ -27,8 +26,11 @@ export default function Home() {
       <BusMap selectedBusId={selectedBusId} />
       {/* جدول مواعيد الباص */}
       <SectionTitle title="Bus Schedule" />
-      <BusSelector />
-      <BusSchedule />
+      <BusSelector
+        selectedBusId={selectedBusId}
+        onSelectBus={setSelectedBusId}
+      />
+      <BusSchedule selectedBusId={selectedBusId} />
       {/* الفوتر */}
       <Footer />
     </div>
