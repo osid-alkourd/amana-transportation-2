@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 export default function Home() {
-  const [selectedBusId, setSelectedBusId] = useState<number | null>(null);
+  const [selectedBusId, setSelectedBusId] = useState<number>(1);
 
   return (
     <div className="App">

@@ -53,9 +53,11 @@ export default function BusMap({ selectedBusId }) {
                 <Popup>
                   <b>{selectedBus.name}</b> ({selectedBus.route_number})
                   <br />
-                  Driver: {selectedBus.driver.name}
+                  Capacity: {selectedBus.passengers.current} / {selectedBus.passengers.capacity} (
+                  {selectedBus.passengers.utilization_percentage}%)
                   <br />
-                  Status: {selectedBus.status}
+                  Next Stop:{" "}
+                  {selectedBus.bus_stops.find((stop) => stop.is_next_stop)?.name || "N/A"}
                 </Popup>
               </Marker>
 
