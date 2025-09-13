@@ -3,10 +3,12 @@ import Navbar from "./components/Navbar/Navbar";
 import HeaderSection from "./components/HeaderSection/HeaderSection";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import BusSelector from "./components/BusSelector/BusSelector";
-import BusMap from "./components/BusMap/BusMap";
+// import BusMap from "./components/BusMap/BusMap";
 import BusSchedule from "./components/BusSchedule/BusSchedule";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+const BusMap = dynamic(() => import("./components/BusMap/BusMap"), { ssr: false });
 
 export default function Home() {
   const [selectedBusId, setSelectedBusId] = useState<number>(1);
